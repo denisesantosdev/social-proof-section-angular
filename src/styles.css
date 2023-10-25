@@ -8,6 +8,9 @@
 body {
   font-family: "League Spartan", sans-serif;
   padding: 1rem;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 * {

@@ -1,5 +1,11 @@
-<app-text></app-text>
-<app-stars *ngFor="let i of reviewSites" [reviewSite]="i"> </app-stars>
-<section class="flex flex-col gap-4">
-  <app-card *ngFor="let i of reviewers" [reviewer]="i"></app-card>
-</section>
+<main class="max-w-5xl m-auto grid">
+  <section class="grid md:grid-cols-[350px_440px] md:justify-between md:items-center">
+    <app-text></app-text>
+    <div>
+      <app-stars *ngFor="let i of reviewSites" [reviewSite]="i"> </app-stars>
+    </div>
+  </section>
+  <section class="grid gap-4 md:grid-cols-3">
+    <app-card *ngFor="let i of reviewers" [reviewer]="i"></app-card>
+  </section>
+</main>
