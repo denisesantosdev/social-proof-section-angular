@@ -1,5 +1,6 @@
-<main class="max-w-5xl m-auto grid">
-  <section class="grid md:grid-cols-[350px_440px] md:justify-between md:items-center">
+<main class="max-w-5xl m-auto grid gap-16">
+  <section
+    class="grid gap-16 md:grid-cols-[350px_440px] md:justify-between md:items-center">
     <app-text></app-text>
     <div>
       <app-stars *ngFor="let i of reviewSites" [reviewSite]="i"> </app-stars>
