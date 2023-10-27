@@ -12,7 +12,3 @@ body {
   display: grid;
   place-items: center;
 }
-
-* {
-  outline: 1px solid red;
-}
