@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 type reviewer = {
   name?: string,
@@ -13,10 +13,12 @@ type reviewer = {
 })
 export class CardComponent implements OnInit {
   @Input() reviewer: reviewer = { };
+  @Input() marginValue: number = 0
 
   constructor() {}
 
   ngOnInit(): void {
 
   }
+
 }

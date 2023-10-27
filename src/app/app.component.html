@@ -1,12 +1,18 @@
 <main class="max-w-5xl m-auto grid gap-16">
   <section
-    class="grid gap-16 md:grid-cols-[350px_440px] md:justify-between md:items-center">
+    class="grid gap-16 md:grid-cols-[1fr_2fr] md:justify-between md:items-center">
     <app-text></app-text>
-    <div>
-      <app-stars *ngFor="let i of reviewSites" [reviewSite]="i"> </app-stars>
+    <div class="md:w-fit md:justify-self-end">
+      <app-stars 
+        *ngFor="let item of reviewSites; let i = index" [reviewSite]="item"
+        [marginValue]="generateMargin(20,i)"
+        >
+      </app-stars>
     </div>
   </section>
   <section class="grid gap-4 md:grid-cols-3">
-    <app-card *ngFor="let i of reviewers" [reviewer]="i"></app-card>
+    <app-card 
+      *ngFor="let item of reviewers; let i = index" [reviewer]="item" [marginValue]="generateMargin(20,i)">
+    </app-card>
   </section>
 </main>

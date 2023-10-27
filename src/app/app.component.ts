@@ -28,4 +28,17 @@ export class AppComponent {
         'Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!',
     },
   ];
+
+  generateMargin(multiplier: number, multiplicand:number): number {
+    return multiplier * multiplicand;
+  }
 }
+
+/* 
+margin top
+margin left
+array lenght
+use for
+generateMargin(multiply amount)
+angular style
+*/

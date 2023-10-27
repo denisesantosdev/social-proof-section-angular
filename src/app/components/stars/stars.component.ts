@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class StarsComponent implements OnInit {
   starNumber: number = 5
   @Input() reviewSite:string=''
+  @Input() marginValue:number=0
 
   constructor() { }
 
